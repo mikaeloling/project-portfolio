@@ -1,0 +1,81 @@
+.introduction {
+    background-color: #ffffff;
+    height: 980px;
+    position: relative;
+    width: 1512px;
+}
+
+.introduction .frame {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+    left: 336px;
+    position: absolute;
+    top: 332px;
+}
+
+.introduction .div {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+}
+
+.introduction .text-wrapper {
+    color: #000000;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+}
+
+.introduction .textwrapper2 {
+    color: #0b24f5;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.introduction .frame2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 22px;
+    position: relative;
+}
+
+.introduction .ellipse {
+    height: 164px;
+    object-fit: cover;
+    position: relative;
+    width: 164px;
+}
+
+.introduction .p {
+    color: #000000;
+    font-family: "Hind-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: 600px;
+}
+
+.introduction .arrow-instance {
+    height: 68px !important;
+    left: 742px !important;
+    position: absolute !important;
+    top: 848px !important;
+    width: 27px !important;
+}

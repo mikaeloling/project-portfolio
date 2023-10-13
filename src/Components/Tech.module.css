@@ -1,0 +1,31 @@
+.tech {
+    background-color: #0b24f5;
+    height: 980px;
+    position: relative;
+    width: 1512px;
+}
+
+.tech .title {
+    color: #ffffff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 80px;
+    font-weight: 700;
+    left: 346px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 440px;
+}
+
+.tech .HTMLCSSflexbox {
+    color: #ffffff;
+    font-family: "Hind-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    left: 668px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 361px;
+    width: 600px;
+}
