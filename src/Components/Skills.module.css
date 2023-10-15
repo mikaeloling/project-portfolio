@@ -1,0 +1,112 @@
+.skills {
+    background-color: #0b24f5;
+    height: 744px;
+    position: relative;
+    width: 1512px;
+}
+
+.skills .title {
+    color: #ffffff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 80px;
+    font-weight: 700;
+    left: 647px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 127px;
+}
+
+.skills .frame {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 64px;
+    left: 338px;
+    position: absolute;
+    top: 354px;
+}
+
+.skills .div {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+.skills .code {
+    align-items: flex-start;
+    background-color: #eb5577;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    padding: 2px;
+    position: relative;
+}
+
+.skills .textwrapper {
+    color: #ffffff;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+}
+
+.skills .textwrapper-2 {
+    color: #ffffff;
+    font-family: "Hind-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+}
+
+.skills .toolbox {
+    align-items: flex-start;
+    background-color: #2483e0;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    padding: 2px;
+    position: relative;
+}
+
+.skills .upcomming {
+    align-items: flex-start;
+    background-color: #6db385;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    padding: 2px;
+    position: relative;
+}
+
+.skills .more {
+    align-items: flex-start;
+    background-color: #ffdd2f;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    padding: 2px;
+    position: relative;
+}
+
+.skills .textwrapper-3 {
+    color: #0b24f5;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+}
