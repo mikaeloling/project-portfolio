@@ -1,0 +1,15 @@
+[
+
+    {
+      "name": "Chatbot built in javascript",
+      "description": "The chat bot app is a conversational AI-powered tool designed to enhance user experience...",
+      "image": "img.png",
+      "tech": ["HTML5", "CSS3", "React", "Node"]
+    },
+    {
+      "name": "Weather app",
+      "description": "The weather app is designed to provide up-to-date weather information...",
+      "image": "rectangle-3.png",
+      "tech": ["HTML5", "CSS3", "React", "Node"]
+    }
+  ]

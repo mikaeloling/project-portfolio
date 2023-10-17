@@ -1,5 +1,6 @@
 // import { ReadArticle } from "./ReadArticle";
 import style from "./Mywords.module.css";
+import pic2 from '../assets/Copyofnetti6Z0A4996.png';
 
 export const Mywords = () => {
     return (
@@ -7,7 +8,7 @@ export const Mywords = () => {
             <div className={style.title}>My words</div>
             <div className={style.frame}>
                 <div className={style.article}>
-                    <img className={style.img} alt="Img" src="img.png" />
+                    <img className={style.img} alt="Img" src={pic2} />
                     <div className={style.div}>
                         <div className={style.tag}>
                             <div className={style.textwrapper2}>July 2023</div>

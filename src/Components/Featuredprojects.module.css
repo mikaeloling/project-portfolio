@@ -1,9 +1,9 @@
-.featured-projects {
+/* .featuredprojects {
     height: 3614px;
     width: 1512px;
 }
 
-.featured-projects .div-2 {
+.featuredprojects .div2 {
     align-items: flex-start;
     display: inline-flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     top: 128px;
 }
 
-.featured-projects .title {
+.featuredprojects .title {
     color: #0b24f5;
     font-family: "Montserrat-Bold", Helvetica;
     font-size: 80px;
@@ -26,13 +26,13 @@
     width: fit-content;
 }
 
-.featured-projects .project {
+.featuredprojects .project {
     height: 280px;
     position: relative;
     width: 820px;
 }
 
-.featured-projects .img {
+.featuredprojects .img {
     height: 280px;
     left: 0;
     object-fit: cover;
@@ -41,7 +41,7 @@
     width: 280px;
 }
 
-.featured-projects .frame {
+.featuredprojects .frame {
     align-items: flex-start;
     display: inline-flex;
     flex-direction: column;
@@ -51,7 +51,7 @@
     top: 0;
 }
 
-.featured-projects .header {
+.featuredprojects .header {
     color: #000000;
     font-family: "Montserrat-SemiBold", Helvetica;
     font-size: 32px;
@@ -63,7 +63,7 @@
     width: fit-content;
 }
 
-.featured-projects .text {
+.featuredprojects .text {
     color: #000000;
     font-family: "Hind-Regular", Helvetica;
     font-size: 18px;
@@ -74,7 +74,7 @@
     width: 500px;
 }
 
-.featured-projects .tech {
+.featuredprojects .tech {
     align-items: flex-start;
     display: inline-flex;
     flex: 0 0 auto;
@@ -82,7 +82,7 @@
     position: relative;
 }
 
-.featured-projects .div-wrapper {
+.featuredprojects .divwrapper {
     align-items: flex-start;
     background-color: #000000;
     display: inline-flex;
@@ -91,7 +91,7 @@
     position: relative;
 }
 
-.featured-projects .text-wrapper-2 {
+.featuredprojects .textwrapper2 {
     color: #ffffff;
     font-family: "Montserrat-SemiBold", Helvetica;
     font-size: 16px;
@@ -103,7 +103,7 @@
     width: fit-content;
 }
 
-.featured-projects .btns {
+.featuredprojects .btns {
     align-items: flex-start;
     display: inline-flex;
     gap: 32px;
@@ -112,17 +112,17 @@
     top: 232px;
 }
 
-.featured-projects .design-component-instance-node {
+.featuredprojects .designcomponentinstancenode {
     flex: 0 0 auto !important;
 }
 
-.featured-projects .rectangle {
+.featuredprojects .rectangle {
     height: 280px;
     left: 0;
     position: absolute;
     top: 0;
     width: 280px;
-}
+} */
 
 
 

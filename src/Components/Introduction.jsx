@@ -1,16 +1,18 @@
-import style from "./Introduction.module.css"; 
+import pic1 from '../assets/pic1.jpeg';
 
 export const Introduction = () => {
+
+
   return (
-    <div className={style.introduction}>
-      <div className={style.frame}>
-        <div className={style.div}>
-          <div className={style.textwrapper}>Hi, Im Sara Svensson</div>
-            <div className={style.textwrapper2}>Frontend Developer</div>
+    <div className="introduction">
+      <div className="frame">
+        <div className="div">
+          <div className="textwrapper">Hi, Im Sara Svensson</div>
+            <div className="textwrapper2">Frontend Developer</div>
           </div>
-        <div className={style.frame2}>
-          <img className={style.ellipse} alt="Ellipse" src="ellipse-1.png" />
-            <p className={style.p}>
+        <div className="frame2">
+          <img className="ellipse" alt="Ellipse" src={pic1} />
+            <p className="p">
               Sara is an exceptional developer known for her innovative solutions and exceptional coding abilities. She
               creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a
               valuable asset to any project and a standout in the technology field.
