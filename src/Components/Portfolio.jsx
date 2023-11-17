@@ -1,4 +1,3 @@
-import React from 'react';
 import Featuredprojects from '../Components/Featuredprojects';
 
 const Portfolio = () => {
@@ -10,4 +9,4 @@ const Portfolio = () => {
   );
 }
 
-export { Portfolio };
+export default Portfolio;

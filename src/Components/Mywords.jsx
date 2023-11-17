@@ -1,33 +1,51 @@
-// import { ReadArticle } from "./ReadArticle";
-import style from "./Mywords.module.css";
-import pic2 from '../assets/Copyofnetti6Z0A4996.png';
+import { useState, useEffect } from 'react';
 
-export const Mywords = () => {
+const Mywords = () => {
+    const [articles, setArticles] = useState([]);
+    
+    useEffect(() => {
+        fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mikael.oling')
+            .then((response) => response.json())
+            .then((data) => setArticles(data))
+            .catch((error) => console.error('Error fetching Medium data: ', error));
+    }, []);
+
     return (
-        <div className={style.mywords}>
-            <div className={style.title}>My words</div>
-            <div className={style.frame}>
-                <div className={style.article}>
-                    <img className={style.img} alt="Img" src={pic2} />
-                    <div className={style.div}>
-                        <div className={style.tag}>
-                            <div className={style.textwrapper2}>July 2023</div>
-                        </div>
-                        <p className={style.header}>
-                            How to stop being scared:
-                            <br />
-                            Learning to love code
-                        </p>
-                    </div>
-                    <p className={style.text}>
-                        Writing code is less about “just working”. Instead, its much more about creativity. Its similar to
-                        creative writing in that the author architecting a story must use an assortment of tools and components
-                        (i.e., content) in a way to satisfy a particular objective.
-                    </p>
-                    {/* <ReadArticle className={readarticleinstance} doc="doc-2.svg" property1="default" /> */}
-                </div>
-              </div>
+        <div>
+            <h1>My Words</h1>
+            <ul>
+                {articles.items &&
+                    articles.items.map((item) => (
+                                    <div key={item.guid}>´
+                                    <div>
+                                        {item.thumbnail && <img src={item.thumbnail} alt={item.title} />}
+                                        </div>
+                                        <h2>{item.title}</h2>
+                                        <a href={item.link} target="_blank" rel="noopener noreferrer">
+                                            {item.title}
+                                        </a>
+                                
+                                    </div>
+                                    
+                                ))}
+                        </ul>
+                        <ul>
+                            {Array.isArray(articles) && articles.map((article) => (
+                                <li key={article.id}>
+                                    <img src={article.thumbnail} alt={article.title} />
+                                    <h2>{article.title}</h2>
+                                    <p>{article.description}</p>
+                                    <a href={article.link}>Medium article</a>
+                                    <p>Language: {article.language}</p>
+                                </li>
+                            ))}
+                        
+            </ul>
         </div>
-      
     );
-}
+
+
+};
+
+
+export default Mywords

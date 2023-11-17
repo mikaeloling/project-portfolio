@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function GitHubProjects() {
   const [githubProjects, setGitHubProjects] = useState([]);
@@ -16,11 +16,12 @@ function GitHubProjects() {
       <h1>My GitHub Projects</h1>
       <ul>
         {githubProjects.map((project) => (
-          <li key={project.id}>
+          <div key={project.id}>
             <h2>{project.name}</h2>
             <p>{project.description}</p>
             <a href={project.html_url}>GitHub Repository</a>
-          </li>
+            <p>Language: {project.language}</p>
+          </div>
         ))}
       </ul>
     </div>

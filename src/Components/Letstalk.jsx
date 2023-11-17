@@ -1,28 +1,20 @@
-import React from "react";
-// import { BtnInstagram } from "./BtnInstagram";
-// import { BtnLinkedin } from "./BtnLinkedin";
-// import { BtnStackoverflow } from "./BtnStackoverflow";
-// import { BtnTwitter } from "./BtnTwitter";
-// import { Property1Hover } from "./Property1Hover";
-// import { BtnInstagram } from "./BtnInstagram";
-// import { BtnLinkedin } from "./BtnLinkedin";
-// import { BtnStackoverflow } from "./BtnStackoverflow";
-import style from "./Letstalk.module.css";
+
+
 import pic1 from '../assets/pic1.jpeg';
 
 
 export const LetsTalk = () => {
     return (
-        <div className={style.letstalk}>
-            <div className={style.title}>Let’s talk</div>
-            <div className={style.frame}>
-                <img className={style.ellipse} alt="Ellipse" src={pic1} />
-                <div className={style.div}>
-                    <div className={style.textwrapper}>Sara Svensson</div>
-                    <div className={style.textwrapper2}>+46(0)763 12 33 45</div>
-                    <div className={style.textwrapper2}>sara.svensson@mail.com</div>
+        <div>
+            <div className="title">Let’s talk</div>
+            <div className="frame">
+                <img className="ellipse" alt="Ellipse" src={pic1} />
+                <div className="div">
+                    <div className="textwrapper">Sara Svensson</div>
+                    <div className="textwrapper2">+46(0)763 12 33 45</div>
+                    <div className="textwrapper2">sara.svensson@mail.com</div>
                 </div>
-                <div className={style.sociallinks}>
+                <div className="sociallinks">
                     {/* <BtnLinkedin className="icon-instance-node" color="#D0D0D0" />
                     <Property1Hover className="icon-instance-node" color="#D0D0D0" />
                     <BtnStackoverflow className="icon-instance-node" />
@@ -33,3 +25,6 @@ export const LetsTalk = () => {
         </div>
     );
 };
+
+
+export default LetsTalk;

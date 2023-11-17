@@ -24,3 +24,4 @@ export const Introduction = () => {
   );
   };
 
+export default Introduction;

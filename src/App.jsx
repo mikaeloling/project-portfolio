@@ -1,11 +1,13 @@
 // Code: App component
 import './App.css'
-import { Introduction } from './Components/Introduction'
-import { Tech } from './Components/Tech'
-import { Mywords } from './Components/Mywords'
-import { Skills } from './Components/Skills'
-import { LetsTalk } from './Components/Letstalk'
-import {Portfolio} from './Components/Portfolio'
+import Introduction from './Components/Introduction'
+import Tech from './Components/Tech'
+import Skills from './Components/Skills'
+import LetsTalk from './Components/Letstalk'
+import Portfolio from './Components/Portfolio'
+import  Mywords  from './Components/Mywords'
+
+
 
 function App() {
 
@@ -15,10 +17,9 @@ function App() {
     <Introduction />
     <Tech />
     <Portfolio />
-    <Mywords />
     <Skills />
+    <Mywords />
     <LetsTalk />
-
     </>
   )
 }

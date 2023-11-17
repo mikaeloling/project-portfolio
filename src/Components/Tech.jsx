@@ -27,3 +27,5 @@ export const Tech = () => {
       </div>
     );
   };
+
+export default Tech;

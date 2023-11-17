@@ -1,4 +1,4 @@
-/* Introduction style  */
+/* Introduction style 
 
 #root {
   max-width: 1280px;
@@ -90,7 +90,7 @@
 } */
 
 /* Tech style  */
-
+/* 
 .tech {
   background-color: #0b24f5;
   height: 980px;
@@ -125,7 +125,7 @@
 
 /* Featured Projects Style */
 
-.featuredprojects {
+/* .featuredprojects {
   height: 3614px;
   width: 1512px;
 }
@@ -151,9 +151,9 @@
   position: relative;
   text-align: center;
   width: fit-content;
-}
+} */
 
-.featuredprojects .project {
+/* .featuredprojects .project {
   height: 280px;
   position: relative;
   width: 820px;
@@ -166,9 +166,9 @@
   position: absolute;
   top: 0;
   width: 280px;
-}
+} */
 
-.featuredprojects .frame {
+/* .featuredprojects .frame {
   align-items: flex-start;
   display: inline-flex;
   flex-direction: column;
@@ -176,9 +176,9 @@
   left: 320px;
   position: absolute;
   top: 0;
-}
+} */ 
 
-.featuredprojects .header {
+/* .featuredprojects .header {
   color: #000000;
   font-family: "Montserrat-SemiBold", Helvetica;
   font-size: 32px;
@@ -241,15 +241,181 @@
 
 .featuredprojects .designcomponentinstancenode {
   flex: 0 0 auto !important;
-}
+} */
 
-.featuredprojects .rectangle {
+/* .featuredprojects .rectangle {
   height: 280px;
   left: 0;
   position: absolute;
   top: 0;
   width: 280px;
-} 
+}  */
+
+
+/* mywords styling */
+/* 
+.mywords {
+  background-color: #ffffff;
+  height: 980px;
+  position: relative;
+  width: 1512px;
+}
+
+.mywords .title {
+  color: #000000;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 80px;
+  font-weight: 700;
+  left: 346px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 440px;
+} */
+
+/* .mywords .text {
+  color: #000000;
+  font-family: "Hind-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 668px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 361px;
+  width: 600px;
+} */
+
+
+/* letstalk styling */
+
+/* .letstalk {
+  background-color: #0b24f5;
+  height: 980px;
+  position: relative;
+  width: 1512px;
+}
+
+.letstalk .letstalk {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  left: 346px;
+  position: relative;
+  top: 128px;
+}
+
+.letstalk .title {
+  color: #ffffff;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 80px;
+  font-weight: 700;
+  left: 346px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 440px;
+} */
+
+/* .letstalk .frame {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  left: 668px;
+  position: absolute;
+  top: 361px;
+}
+
+.letstalk .div {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.letstalk .textwrapper2 {
+  color: #ffffff;
+  font-family: "Montserrat-SemiBold", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+} */
+
+/* .letstalk .text {
+  color: #ffffff;
+  font-family: "Hind-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: 600px;
+} */
 
 
 
+
+/* Contact style  */
+
+/* .contact {
+  background-color: #0b24f5;
+  height: 980px;
+  position: relative;
+  width: 1512px;
+}
+
+.contact .title {
+  color: #ffffff;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 80px;
+  font-weight: 700;
+  left: 346px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 440px;
+}
+
+.contact .text {
+  color: #ffffff;
+  font-family: "Hind-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 668px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 361px;
+  width: 600px;
+} */
+
+/* Footer style  */
+
+/* .footer {
+  background-color: #000000;
+  height: 280px;
+  position: relative;
+  width: 1512px;
+}
+
+.footer .text {
+  color: #ffffff;
+  font-family: "Hind-Regular", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  left: 346px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 100px;
+  width: 600px;
+}
+
+ */ 
