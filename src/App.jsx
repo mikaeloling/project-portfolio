@@ -17,8 +17,8 @@ function App() {
     <Introduction />
     <Tech />
     <Portfolio />
-    <Skills />
     <Mywords />
+    <Skills />
     <LetsTalk />
     </>
   )
