@@ -5,33 +5,34 @@ const StyledIntroductionContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex: auto 0 0;
+  position: relative;
   background-color: rgb(255, 255, 255);
-  height: 100vh;
-  width: 100%;
+  height: 980px;
   `;
 
 const IntroductionBody = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+flex: 0 0 auto;
+display: inline-flex;
+flex-direction: column;
+
+gap: 16px;
+position: relative;
   `;
 const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   .textwrapper {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
+    font-size: 32px;
     font-weight: 600;
     color: #000000;
     margin-bottom: 0.5rem;
   }
   .textwrapper2 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    font-size: 80px;
     font-weight: 600;
     color: #0b24f5;
     margin-bottom: 0.5rem;
@@ -48,17 +49,17 @@ const Image = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
+  width: 164px;
+  height: 164px;
   border-radius: 50%;
   margin-right: 2rem;
   `;
 const Text = styled.div`
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 400;
+  width: 600px;
   color: #000000;
-  width: 500px;
   `;
 
 
@@ -69,16 +70,14 @@ export const Introduction = () => {
     <StyledIntroductionContainer>
       <IntroductionBody>
         <HeaderContainer>
-          <div className="textwrapper" >Hi, Im Sara Svensson</div>
+          <div className="textwrapper" >Hi, I'm Mikael Öling</div>
             <div className="textwrapper2">Frontend Developer</div>
           </HeaderContainer>
         <ImgTextContainer>
         
           <Image></Image>
           <Text>
-              Sara is an exceptional developer known for her innovative solutions and exceptional coding abilities. She
-              creates user-friendly applications and solves complex issues with ease. Her drive for excellence makes her a
-              valuable asset to any project and a standout in the technology field.
+          Mikael is a versatile marketer, entrepreneur, and developer, constantly seeking to acquire new knowledge and bring his unique ideas to life. He is recognized for his innovative solutions and exceptional coding abilities. Mikael develops user-friendly applications and effortlessly resolves complex issues. His pursuit of excellence makes him an invaluable asset to any project and a notable figure in the technology field.
               </Text>
         </ImgTextContainer>
       

@@ -4,15 +4,10 @@ import { useState } from 'react';
 
 
 const Githubcontainer = styled.div`
-  display: grid;
+  display: flex;
+  flex-direction: column;
   height: auto;
-  background-color: #ffffff;
-  grid-template-columns: 1fr;
-  margin: 280px 128px 280px 128px;
-  
-
-
-  text-align: center;
+ 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     height: 796px;
@@ -24,14 +19,13 @@ const Githubcontainer = styled.div`
 `;
 
 const GithubBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  height: 280px;
-  width: 820px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  text-align: center;
+  
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     height: 796px;
@@ -43,10 +37,11 @@ const GithubBox = styled.div`
 `;
 
 const Title = styled.div`
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
+  margin-top: 128px;
+  margin-bottom: 128px;
+  font-family: 'Montserrat-Bold', Helvetica;
   align-self: center;
-  font-size: 2rem;
+  font-size: 80px;
   font-weight: 600;
   color: #000000;
 `;
@@ -54,7 +49,9 @@ const Title = styled.div`
 const GithubImage = styled.div`
   width: 280px;
   height: 280px;
-  border-radius: 2%
+  background-image: url(${(props) => props.src});
+  background-size: cover;
+´  border-radius: 2%
 `;
 
 const DescriptionBox = styled.div`
@@ -76,6 +73,8 @@ useEffect(() => {
     .catch((error) => console.error('Error fetching GitHub data: ', error));
 }, []);
 
+
+
   return (
   <Githubcontainer>
   <Title>
@@ -84,9 +83,9 @@ useEffect(() => {
   {githubProjects.map((project) => (
     <div key={project.id}>
       <GithubBox>
-        <GithubImage>
-          <img src={project.owner.avatar_url} alt="avatar" />
-        </GithubImage>
+      <GithubImage src={project}>
+      <img src={project} alt="avatar" />
+    </GithubImage>
         <DescriptionBox>
           <h2>{project.name}</h2>
           <p>{project.description}</p>

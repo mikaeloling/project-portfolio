@@ -2,12 +2,11 @@ import GitHubProjects from '../Components/GitHubProjects';
 import styled from 'styled-components';
 
 const FeaturedprojectsContainer = styled.div`
-  display: grid;
-  height: auto;
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
-  grid-template-columns: 1fr 1fr;
-  padding: 2rem;
   text-align: center;
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     height: 796px;
@@ -23,7 +22,6 @@ const FeaturedprojectsContainer = styled.div`
 const Body = styled.div`
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
   align-self: center;
   font-weight: 400;
   color: #000000;
