@@ -1,4 +1,28 @@
 import { useState, useEffect } from 'react';
+import styled from 'styled-components';
+
+
+const MywordsTitle = styled.div`
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    `
+
+const Mywordscontainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+    background-color: #ffffff;
+    text-align: center;
+
+   
+    `
 
 const Mywords = () => {
     const [articles, setArticles] = useState([]);
@@ -11,25 +35,28 @@ const Mywords = () => {
     }, []);
 
     return (
-        <div>
-            <h1>My Words</h1>
-            <ul>
+        <>
+            <MywordsTitle>
+                <h1>My Words</h1>
+            </MywordsTitle>
+            <Mywordscontainer>
+            
                 {articles.items &&
                     articles.items.map((item) => (
+                                        <>
                                     <div key={item.guid}>´
-                                    <div>
                                         {item.thumbnail && <img src={item.thumbnail} alt={item.title} />}
-                                        </div>
+                                        
                                         <h2>{item.title}</h2>
                                         <a href={item.link} target="_blank" rel="noopener noreferrer">
                                             {item.title}
                                         </a>
+                                        </div>
                                 
-                                    </div>
-                                    
+                                        </>
                                 ))}
-                        </ul>
-                        <ul>
+                        
+                        {/* <ul>
                             {Array.isArray(articles) && articles.map((article) => (
                                 <li key={article.id}>
                                     <img src={article.thumbnail} alt={article.title} />
@@ -38,12 +65,13 @@ const Mywords = () => {
                                     <a href={article.link}>Medium article</a>
                                     <p>Language: {article.language}</p>
                                 </li>
-                            ))}
-                        
-            </ul>
-        </div>
-    );
+                            ))} */}
 
+        </Mywordscontainer>
+
+        </>
+    );
+    
 
 };
 

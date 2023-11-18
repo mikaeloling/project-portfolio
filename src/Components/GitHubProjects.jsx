@@ -5,8 +5,8 @@ import { useState } from 'react';
 
 const Githubcontainer = styled.div`
   display: flex;
-  flex-direction: column;
   height: auto;
+  flex-direction: column;
  
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -59,7 +59,7 @@ const DescriptionBox = styled.div`
   font-size: 1.5rem;
   font-weight: 400;
   color: #000000;
-  width: 500px;
+  width: 700px;
 `;
 
 function GitHubProjects() {
@@ -86,14 +86,16 @@ useEffect(() => {
       <GithubImage src={project}>
       <img src={project} alt="avatar" />
     </GithubImage>
+        <div>
         <DescriptionBox>
           <h2>{project.name}</h2>
           <p>{project.description}</p>
           <a href={project.html_url}>GitHub Repository</a>
           <a href={project.README}>Netlify</a>
           <p>Language: {project.language}</p>
-
+          
         </DescriptionBox>
+        </div>
       </GithubBox>
     </div>
   ))}
