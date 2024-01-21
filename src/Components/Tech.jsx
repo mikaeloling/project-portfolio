@@ -2,46 +2,55 @@ import styled from 'styled-components';
 
 const TechContainer = styled.div`
   display: grid;
-  height: 980px;
-  background-color: #0b24f5;
   grid-template-columns: 1fr 1fr;
-  padding: 2rem;
-  text-align: center;
-  
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    height: 796px;
-    padding: 0.5rem;
-  }'
-  
-  @media (max-width: 500px) {
-    grid-template-columns: 1fr;
-    height: 400px;
-    padding: 0.5rem;
-  }
-  
-  `
-  
+  background-color: #0b24f5;  
+  align-items: center;
+  padding: 128px 328px;
 
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 600px;
+    padding: 10px 10px;
+  }
+
+  `;
+
+  
 const Title = styled.div`
-  display: flex;
+  color: #ffffff;
   font-family: 'Montserrat-Bold', Helvetica;
-  align-self: center;
   font-size: 80px;
   font-weight: 700;
-  justify-content: center;
-  margin-left: 230px;
-  margin-right: 124px;
+  letter-spacing: 0;
+  line-height: normal;
+
+  @media (max-width: 768px) {
+    margin-bottom: 64px;
+    position: relative;
+    text-align: center;
+    height: fit-content;
+   
+  }
+  `;
   
-  `
+
+  
+  
 const Body = styled.div`
-  display: flex;
-  font-family: 'Hind-SemiBold', Helvetica;
-  font-size: 32px;
-  font-weight: 600;
-  align-self: center;
   color: #ffffff;
-  margin-right: 128px;
+  font-family: 'Hind-SemiBold', Helvetica;
+  font-size: 3vh;
+  
+  
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: flex-content;
+  
+    
+  }
   `
 
 
@@ -59,3 +68,4 @@ const Tech = () => {
   };
 
 export default Tech;
+

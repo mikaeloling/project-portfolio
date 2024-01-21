@@ -1,25 +1,35 @@
-// Code: App component
-import './App.css'
 import Introduction from './Components/Introduction'
 import Tech from './Components/Tech'
 import Skills from './Components/Skills'
 import LetsTalk from './Components/Letstalk'
-import Portfolio from './Components/Portfolio'
-import  Mywords  from './Components/Mywords'
+import FeaturedProjects from './Components/Featuredprojects'
+import MyWords from './Components/Mywords'
+import TickerTape from './Components/TickerTape'
+import './App.css'
+import styled from 'styled-components'
 
+const AppContainer = styled.div`
+  
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+  
+  `;
 
 
 function App() {
 
-
   return (
     <>
+    <AppContainer>
     <Introduction />
     <Tech />
-    <Portfolio />
-    <Mywords />
+    <FeaturedProjects />
+    <MyWords />
     <Skills />
     <LetsTalk />
+    <TickerTape />
+    </AppContainer>
     </>
   )
 }

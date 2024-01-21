@@ -1,87 +1,115 @@
-import pic1 from '../assets/pic1.jpeg';
 import styled from 'styled-components';
+import Mikael1 from '../assets/Mikael1.jpg';
+import { StyledArrow } from '../uicomponents/Arrow';
 
-const StyledIntroductionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: auto 0 0;
-  position: relative;
-  background-color: rgb(255, 255, 255);
-  height: 980px;
-  `;
-
-const IntroductionBody = styled.div`
-flex: 0 0 auto;
-display: inline-flex;
+const StyledIntroductionContainer = styled.div` 
+display: flex;
+padding: 328px 328px;
 flex-direction: column;
-
+background-color: #ffffff;
+align-items: center;
+justify-content: center;
 gap: 16px;
-position: relative;
-  `;
+
+`;
+
+
+
 const HeaderContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  
   .textwrapper {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    font-weight: 600;
     color: #000000;
-    margin-bottom: 0.5rem;
+    font-family: 'Montserrat-SemiBold', Helvetica;
+    font-size: 3vh;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+   
+    
   }
   .textwrapper2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 80px;
-    font-weight: 600;
     color: #0b24f5;
-    margin-bottom: 0.5rem;
+    font-family: 'Montserrat-Bold', Helvetica;
+    font-size: 80px;
+    font-weight: 700;
   }
   `;
 const ImgTextContainer = styled.div`
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+  
+  }
+
+  
   `;
 const Image = styled.div`
-  background-image: url(${pic1});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 164px;
-  height: 164px;
+  background-image: url(${Mikael1});
+  background-size: cover; 
+  width: 264px;
+  height: 264px;
   border-radius: 50%;
-  margin-right: 2rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+  `;
+    
+  const MobileImage = styled.div`
+  background-image: url(${Mikael1});
+  background-size: cover;
+  width: 264px;
+  height: 264px;
+  border-radius: 50%;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+
+  }
+
+ 
+
   `;
 const Text = styled.div`
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  width: 600px;
-  color: #000000;
+color: #000000;
+font-family: "Hind-Regular", Helvetica;
+font-size: 3vh;
+font-weight: 400;
+
   `;
 
+const Arrow = styled.div`
+  margin-bottom: 64px;
+
+  `;
 
 export const Introduction = () => {
 
 
   return (
     <StyledIntroductionContainer>
-      <IntroductionBody>
-        <HeaderContainer>
-          <div className="textwrapper" >Hi, I'm Mikael Öling</div>
+      <MobileImage />
+      <HeaderContainer>
+        
+          <div className="textwrapper" >Hi, I´m Mikael Öling</div>
             <div className="textwrapper2">Frontend Developer</div>
           </HeaderContainer>
+      
+        
         <ImgTextContainer>
         
           <Image></Image>
           <Text>
-          Mikael is a versatile marketer, entrepreneur, and developer, constantly seeking to acquire new knowledge and bring his unique ideas to life. He is recognized for his innovative solutions and exceptional coding abilities. Mikael develops user-friendly applications and effortlessly resolves complex issues. His pursuit of excellence makes him an invaluable asset to any project and a notable figure in the technology field.
+          Hello! My name is Mikael and I am a marketer that has gone insane and decided to become a frontend developer. I manage e-commerce websites, create marketing texts, run ads on Meta and Google and build my own web applications. If you are interested in working with me, feel free to contact me!
+
               </Text>
         </ImgTextContainer>
-      
-        </IntroductionBody>
+      <StyledArrow> <Arrow /></StyledArrow>
     </StyledIntroductionContainer>
   );
   };

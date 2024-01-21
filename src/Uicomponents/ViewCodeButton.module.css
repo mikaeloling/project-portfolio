@@ -1,0 +1,29 @@
+.githubIcon {
+    width: 48px;
+    position: relative;
+    height: 48px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.viewTheCode {
+    position: relative;
+    font-weight: 600;
+}
+.viewCodeButton {
+    position: relative;
+    border-radius: 40px;
+    background-color: #f5f5f5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 16px 0px 0px;
+    box-sizing: border-box;
+    gap: 7px;
+    text-align: left;
+    font-size: 20px;
+    color: #333;
+    font-family: Montserrat;
+}
+

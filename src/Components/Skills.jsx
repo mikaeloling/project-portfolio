@@ -1,116 +1,201 @@
 import styled from "styled-components";
 
-const SkillsContainer = styled.div`
-  display: flex;
-
-  flex-direction: column;
-
-  height: auto;
+const StyledSkills = styled.div`
   background-color: #0b24f5;
-  
-  padding: 2rem;
-  text-align: center;
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    height: 796px;
-    padding: 0.5rem;
-  }
-  @media (max-width: 500px) {
-    grid-template-columns: 1fr;
-    height: 400px;
-    padding: 0.5rem;
-  }
-  `
+  height: height: 100%;
+  // position: relative;
+  height: auto;
+  align-items: center;
+  padding: 100px 128px;
 
-  const Title = styled.div`
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
-  align-self: center;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #000000;
-  margin-bottom: 0.5rem;
-  `
-  const Body = styled.div`
-  display: flex;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  align-self: center;
-  font-weight: 400;
-  color: #000000;
-  `
-  const Columns = styled.div`
-  display: grid;
-  margin: 0 auto;
-  width: 100%;
-  
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    height: 796px;
-  }
-  @media (max-width: 500px) {
-    grid-template-columns: 1fr;
-    height: 400px;
-  }
-  `
+  & .title {
+    color: #ffffff;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    margin-bottom: 64px;
+    }
 
+  & .frame {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: flex-start;
+    gap: 64px;
+   
+    @media (max-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+    
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+    
+      
+    }
   
-const Skills = () => {
+  }
+
+  & .div {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+  }
+
+  & .code {
+    align-items: flex-start;
+    background-color: #eb5577;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    padding: 2px;
+    position: relative;
+  }
+
+  & .text-wrapper {
+    color: #ffffff;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+
+  & .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Hind-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+
+  & .toolbox {
+    align-items: flex-start;
+    background-color: #2483e0;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    padding: 2px;
+    position: relative;
+  }
+
+  & .upcomming {
+    align-items: flex-start;
+    background-color: #6db385;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    padding: 2px;
+    position: relative;
+  }
+
+  & .more {
+    align-items: flex-start;
+    background-color: #ffdd2f;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    padding: 2px;
+    position: relative;
+  }
+
+  & .text-wrapper-3 {
+    color: #0b24f5;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+`;
+
+export const Skills = () => {
   return (
-      <SkillsContainer>
-        <Title>
-          Skills
-        </Title>
-        <Columns>
-          <div>
-            <Body>
-              <div>
-                <h3>Code</h3>
-                <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>jQuery</li>
-                  <li>Bootstrap</li>
-                  <li>Material UI</li>
-                  <li>Styled Components</li>
-                  <li>Responsive Design</li>
-                </ul>
-              </div>
-              
-              <div>
-                <h3>Tools</h3>
-                <ul>
-                  <li>Git</li>
-                  <li>GitHub</li>
-                  <li>Heroku</li>
-                  <li>Netlify</li>
-                  <li>VS Code</li>
-                  <li>Postman</li>
-                  <li>Chrome DevTools</li>
-                  <li>npm</li>
-                  <li>Yarn</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3>Upcoming</h3>
-                <ul>
-                  <li>Node.js</li>
-                </ul>
-              </div>
-            </Body>
+    <StyledSkills>
+      <div className="title">Skills</div>
+      <div className="frame">
+        <div className="div">
+          <div className="code">
+            <div className="text-wrapper">Code</div>
           </div>
-        </Columns>
-      </SkillsContainer>
+          <div className="text-wrapper-2">
+            HTML5
+            <br />
+            CSS3
+            <br />
+            Javascript ES6
+            <br />
+            React
+            <br />
+            Styled Components
+            <br />
+            GitHub
+          </div>
+        </div>
+        <div className="div">
+          <div className="toolbox">
+            <div className="text-wrapper">Toolbox</div>
+          </div>
+          <div className="text-wrapper-2">
+            Atom
+            <br />
+            Postman
+            <br />
+            Adobe Photoshop
+            <br />
+            Adobe Illustrator
+            <br />
+            Figma
+            <br />
+            Keynote <br />
+            Slack
+          </div>
+        </div>
+        <div className="div">
+          <div className="upcomming">
+            <div className="text-wrapper">Upcoming</div>
+          </div>
+          <div className="text-wrapper-2">Node.js</div>
+        </div>
+        <div className="div">
+          <div className="more">
+            <div className="text-wrapper-3">More</div>
+          </div>
+          <p className="text-wrapper-2">
+            Design Lead
+            <br />
+            Branding
+            <br />
+            Strategy
+            <br />
+            Process design
+            <br />
+            Concept development
+            <br />
+            Agile methodology <br />
+            Hyper Island toolbox
+          </p>
+        </div>
+      </div>
+    </StyledSkills>
   );
-}
+};
 
 export default Skills;
-
-
-

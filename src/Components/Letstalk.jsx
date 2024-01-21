@@ -1,89 +1,119 @@
-import styled from 'styled-components';
-
-
-import pic1 from '../assets/pic1.jpeg';
+import styled from "styled-components";
+import Mikael1 from "../assets/Mikael1.jpg";
 
 const Container = styled.div`
     display: grid;
-    height: auto;
-    background-color: #ffffff;
     grid-template-columns: 1fr;
     
+    `;
+
+  const Image = styled.div`
+  background-image: url(${Mikael1});
+  background-size: cover; 
+  width: 264px;
+  height: 264px;
+  border-radius: 50%;
+    `;
+
+const StyledLetsTalk = styled.div`
+      background-color: #ffffff;
+      padding-top: 128px;
+  
+  & .title {
+    color: #0b24f5;
+    font-family: "Montserrat-Bold", Helvetica;
+    font-size: 80px;
+    font-weight: 700;
+    align-items: center;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
     text-align: center;
+  }
 
+  & .frame {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 64px;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 128px 0;  }
 
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        height: 796px;
-    }
-    @media (max-width: 500px) {
-        grid-template-columns: 1fr;
-        height: 400px;
-    }
-`;
+ 
 
-const Title = styled.div`
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    align-self: center;
-    justify-content: center;
-    font-size: 2rem;
+    & .div {
+        align-items: center;
+        display: inline-flex;
+        flex-direction: column;
+
+        gap: 8px;
+     
+      }
+
+  & .text-wrapper {
+    color: #000000;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 32px;
     font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+
+  & .text-wrapper-2 {
     color: #000000;
+    font-family: "Montserrat-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+
+  & .social-links {
+    align-items: flex-end;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 32px;
+    position: relative;
+  }
+
+  & .icon-instance-node {
+    height: 32px !important;
+    position: relative !important;
+    width: 32px !important;
+  }
 `;
-
-const Image = styled.div`
-    justify-content: center;
-    margin: 0 auto; 
-    width: 150px;
-    height: 150px;
-    background-image: url(${pic1});
-    mask-image: 50% 50% / 100% 100% linear-gradient(white, transparent);
-`;
-
-const ContactInfo = styled.div`
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    align-self: center;
-    font-weight: 400;
-    color: #000000;
-`;
-
-
-
 
 export const LetsTalk = () => {
-    return (
-        
-        <Container>
-            <Title>
-                Let&lsquo;s Talk
-            </Title>
-            <Image>
-                
-            </Image>
-            <ContactInfo>
-                
-                <p>Phone: 123-456-7890</p>
-                <p>Email:
-                    <a href="mailto:
-                    mikael.oling@gmail.com">
-                </a>    
-                </p>
-            </ContactInfo>
-
-            {/* <IconSection>
-                <a href="https://www.linkedin.com/in/mikael-oling-3b7b7b1b1/">
-                    <img src={linkedin} alt="linkedin" />
-                </a>
-                <a href="https://www.github.com/mikaeloling">
-                    <img src={github} alt="github" />
-                </a>
-            </IconSection>   */}
-
-        </Container>
-       
-    );
+  return (
+<Container>
+    
+    <StyledLetsTalk>
+      <div className="title">Let’s talk</div>
+      <div className="frame">
+        <Image />
+        <div className="div">
+          <div className="text-wrapper">Mikael Öling</div>
+          <div className="text-wrapper-2">+358(0)44 0428822</div>
+          <div className="text-wrapper-2">mikael.oling@mail.com</div>
+        </div>
+        <div className="social-links">
+          {/* <BtnLinkedin className="icon-instance-node" color="#D0D0D0" /> */}
+          {/* <Property1Hover className="icon-instance-node" color="#D0D0D0" /> */}
+          {/* <BtnStackoverflow className="icon-instance-node" />
+          <BtnTwitter className="icon-instance-node" />
+          <BtnInstagram className="icon-instance-node" color="#D0D0D0" /> */}
+        </div>
+      </div>
+    </StyledLetsTalk>
+    
+    </Container>
+  );
 };
 
 
